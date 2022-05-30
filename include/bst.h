@@ -3,7 +3,7 @@
 #define INCLUDE_BST_H_
 template <typename T>
 class BST {
-   private:
+    private:
   struct Node {
     T value;
     int count = 0;
@@ -54,7 +54,8 @@ class BST {
       return sprava + 1;
     }
   }
-   public:
+
+    public:
   BST() : root(nullptr) {}
   void add(const T& val) {
     root = addNode(root, val);
@@ -66,5 +67,4 @@ class BST {
     return heightTree(root);
   }
 };
-      
 #endif  // INCLUDE_BST_H_
