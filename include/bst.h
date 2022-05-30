@@ -3,7 +3,7 @@
 #define INCLUDE_BST_H_
 template <typename T>
 class BST {
-         private:
+          private:
   struct Node {
     T value;
     int count = 0;
@@ -55,7 +55,7 @@ class BST {
     }
   }
 
-        public:
+         public:
   BST() : root(nullptr) {}
   void add(const T& val) {
     root = addNode(root, val);
